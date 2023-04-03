@@ -7,7 +7,7 @@ import java.util.List;
 public class ServerInitializer {
 
     public static void main(String[] args) {
-        int port = 50000;
+        int port = 60000;
         System.out.println("SERVER ON :: " + port);
 
         Reactor reactor = new Reactor(port);

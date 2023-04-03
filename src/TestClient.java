@@ -12,13 +12,13 @@ public class TestClient {
             try {
                 String message;
 
-                Socket socket = new Socket("127.0.0.1", 50000);
+                Socket socket = new Socket("127.0.0.1", 60000);
                 OutputStream out = socket.getOutputStream();
                 message = "0x5001|홍길동|22";
                 out.write(message.getBytes());
                 socket.close();
 
-                Socket socket2 = new Socket("127.0.0.1", 50000);
+                Socket socket2 = new Socket("127.0.0.1", 60000);
                 OutputStream out2 = socket2.getOutputStream();
                 message = "0x6001|hong|1234|홍길동|22|MALE";
                 out2.write(message.getBytes());
